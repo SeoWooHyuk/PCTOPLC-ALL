@@ -65,6 +65,30 @@
     <Compile Include="ucPannel\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucPannel\UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPannel\UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPannel\UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPannel\UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPannel\UserControl4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPannel\UserControl4.Designer.cs">
+      <DependentUpon>UserControl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPannel\UserControl5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPannel\UserControl5.Designer.cs">
+      <DependentUpon>UserControl5.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +103,9 @@
     </Compile>
     <EmbeddedResource Include="ucPannel\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPannel\UserControl5.resx">
+      <DependentUpon>UserControl5.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

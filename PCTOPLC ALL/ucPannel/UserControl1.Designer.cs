@@ -40,33 +40,36 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(30, 71);
+            this.listBox1.ItemHeight = 12;
+            this.listBox1.Location = new System.Drawing.Point(26, 57);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(604, 319);
+            this.listBox1.Size = new System.Drawing.Size(529, 256);
             this.listBox1.TabIndex = 11;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 36);
+            this.label2.Location = new System.Drawing.Point(24, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
+            this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 12;
             this.label2.Text = "문자열입력";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(168, 33);
+            this.textBox2.Location = new System.Drawing.Point(147, 26);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(332, 25);
+            this.textBox2.Size = new System.Drawing.Size(291, 21);
             this.textBox2.TabIndex = 13;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(519, 23);
+            this.button2.Location = new System.Drawing.Point(454, 18);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 41);
+            this.button2.Size = new System.Drawing.Size(101, 33);
             this.button2.TabIndex = 15;
             this.button2.Text = "변환";
             this.button2.UseVisualStyleBackColor = true;
@@ -75,34 +78,34 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(677, 16);
+            this.label3.Location = new System.Drawing.Point(592, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(246, 15);
+            this.label3.Size = new System.Drawing.Size(198, 12);
             this.label3.TabIndex = 16;
             this.label3.Text = "아스키코드는 문자한개에 1byte 8bit";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(677, 36);
+            this.label4.Location = new System.Drawing.Point(592, 29);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(308, 15);
+            this.label4.Size = new System.Drawing.Size(219, 12);
             this.label4.TabIndex = 17;
-            this.label4.Text = "한글은 utf8 유니코드 문자한게에 3byte  24bit";
+            this.label4.Text = "한글은 utf8방식 문자한게에 3byte  24bit";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(677, 71);
+            this.label5.Location = new System.Drawing.Point(592, 57);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(419, 45);
+            this.label5.Size = new System.Drawing.Size(325, 36);
             this.label5.TabIndex = 18;
             this.label5.Text = "byte : 0 ~ 255  sbyte:  -128 ~ 127 8bit  \nshort : -32768 ~ 32768  ushort : 0  ~ 6" +
     "5535 16bit \nint : -2147483648 ~ 2147483638  uint : 0 ~ 4294967295 32bit";
             // 
             // UserControl1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.Controls.Add(this.label5);
@@ -112,8 +115,9 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(1085, 403);
+            this.Size = new System.Drawing.Size(949, 322);
             this.ResumeLayout(false);
             this.PerformLayout();
 

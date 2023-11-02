@@ -36,6 +36,8 @@ namespace PCTOPLC_ALL.ucPannel
 
             for (int i = 0; i < list.Count; i++)
             {
+                listBox1.Items.Add("D"+i);
+                listBox1.Items.Add(list[i].Original_str);
                 listBox1.Items.Add(list[i].Decimal_number);
                 listBox1.Items.Add(list[i].Binary_number);
                 listBox1.Items.Add(list[i].Octal_number);

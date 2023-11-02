@@ -56,7 +56,6 @@ namespace PCTOPLC_ALL.ucPannel.uc1class
                     bytes = Encoding.ASCII.GetBytes(str_temp[i]);
                     short sh = BitConverter.ToInt16(bytes, 0);
                     sInt[i] = sh;
-                   
                     int asciiValue = (int)sInt[i]; //아스키 변환
                     string binaryString = Convert.ToString(asciiValue, 2);
                     string binaryString2 = Convert.ToString(asciiValue, 8);
@@ -72,6 +71,7 @@ namespace PCTOPLC_ALL.ucPannel.uc1class
                     }
 
                     BytebtASCVO bt = new BytebtASCVO(); //값을 담는역활
+                    bt.Original_str = "아스키 " + str_temp[i];
                     bt.Decimal_number = "2byte 10진수변환 " + asciiValue;
                     bt.Binary_number = "2byte 2진수변환 " + output.ToString() + "길이 " + binaryString.Length;
                     bt.Octal_number = "2byte 8진수변환 " + binaryString2;
@@ -131,7 +131,7 @@ namespace PCTOPLC_ALL.ucPannel.uc1class
                                 output.Append(" "); // 뛰어쓰기 추가
                             }
                         }
-
+                        bt.Original_str = "아스키 " + str_temp[i];
                         bt.Decimal_number = "2byte 10진수변환 " + asciiValue;
                         bt.Binary_number = "2byte 2진수변환 " + output.ToString() + "길이 " + binaryString.Length;
                         bt.Octal_number = "2byte 8진수변환 " + binaryString2;
@@ -160,6 +160,7 @@ namespace PCTOPLC_ALL.ucPannel.uc1class
                                 binaryString = Convert.ToString(asciiValue, 2);
                                 binaryString2 = Convert.ToString(asciiValue, 8);
                                 binaryString3 = Convert.ToString(asciiValue, 16);
+                                bt.Original_str = "아스키 " + str_temp[i];
                                 bt.Decimal_number = "2byte 10진수변환 " + asciiValue;
                                 bt.Binary_number = "2byte 2진수변환 " + binaryString + "길이 " + binaryString.Length;
                                 bt.Octal_number = "2byte 8진수변환 " + binaryString2;
@@ -197,10 +198,11 @@ namespace PCTOPLC_ALL.ucPannel.uc1class
                                     output.Append(" "); // 뛰어쓰기 추가
                                 }
                             }
-                            bt.Decimal_number = "2byte 10진수변환 " + Convert.ToInt32(binaryString,2);
-                            bt.Binary_number = "2byte 2진수변환 " + output + "길이 " + binaryString.Length;
-                            bt.Octal_number = "2byte 8진수변환 " + binaryString2;
-                            bt.Hex_number = "2byte 16진수변환 " + binaryString3;
+                            bt.Original_str = "아스키 " + binaryString[i];
+                            bt.Decimal_number = "3byte 10진수변환 " + Convert.ToInt32(binaryString,2);
+                            bt.Binary_number = "3byte 2진수변환 " + output + "길이 " + binaryString.Length;
+                            bt.Octal_number = "3byte 8진수변환 " + binaryString2;
+                            bt.Hex_number = "3byte 16진수변환 " + binaryString3;
 
 
                         }
