@@ -18,7 +18,7 @@ namespace PCTOPLC_ALL.ucPannel
     public partial class UserControl1 : UserControl
     {
 
-        Thread _thread = null;
+        
 
         public UserControl1()
         {
